@@ -16,3 +16,84 @@ You: hey there
 AI: Hi! Let's start with a classic: given an array of integers and a target, return indices of two numbers that add up to the target. How would you approach this?
 You: I would use two approaches, one with dictionary and one with nestedloop 
 AI: Interesting - why would you consider both approaches? What are the tradeoffs between them?
+You: Hello how are you
+You: Helo
+You: Hello how are you
+You: Hello who are u
+AI: I'm your interviewer for today. Let's start with a classic: how would you solve the TwoSum problem?
+You: I plan on using a map/dictionary
+AI: What collision cases concern you with that approach?
+You: Hello 
+You: Hello ! 
+AI: Hello!  How can I help you today?
+You: Tell me a funny joke keep responses short
+AI: Why dont skeletons fight each other?  
+They dont have the *guts*! 
+You: That was funny !
+AI: Glad it gave you a laugh!  Was it a joke, a meme, or just something hilariously random? Let me knowIm always happy to bring the fun! (Or try to, at least.)  
+
+Want another dose of humor? Heres a terrible pun for you:  
+*Why dont skeletons fight each other?*  
+*They dont have the guts.*  
+
+(Youre welcome.)
+You: Cool lets end our chat !
+AI: Sounds good! Have a great day!  Take care, and feel free to reach out anytime if you want to chat again. Bye for now! 
+You: 
+You:  Testing functionality
+AI:  It looks like you'd like to test some functionality. Could you clarify what you'd like to test? For example:
+
+1. **Code functionality** – Would you like me to test or review a piece of code (e.g., Python, JavaScript, etc.)?
+2. **System/API testing** – Should I simulate API requests (GET, POST, etc.) or check system behavior?
+3. **Feature verification** – Do you want to test a specific feature or logic (e.g., a login system, a calculator, etc.)?
+4. **General QA testing** – Should I provide test cases or edge cases for a given scenario?
+
+Let me know the details, and I’d be happy to help! For now, here’s a quick example of testing a Python function:
+
+### Example: Testing a Simple Function
+```python
+def add_numbers(a, b):
+    return a + b
+
+# Test cases
+print(add_numbers(2, 3))       # Expected: 5
+print(add_numbers(-1, 1))      # Expected: 0
+print(add_numbers(0, 0))       # Expected: 0
+```
+
+What would you like to test? Provide specifics, and I’ll assist!
+You:  I am starting the record and let's test what questions are we doing today.
+AI: Great! Since you're starting the recording and testing questions, here are some suggestions based on common goalsfeel free to adapt or specify your focus:  
+
+### **Potential Question Categories to Test Today:**  
+1. **General Knowledge**  
+   - *Example:* "Whats the capital of France?"  
+
+2. **Problem-Solving**  
+   - *Example:* "If a train travels 60 mph for 2 hours, how far does it go?"  
+
+3. **Creative Thinking**  
+   - *Example:* "Write a haiku about a sunset."  
+
+4. **Technical/Functional**  
+   - *Example:* "Explain how a VPN works in simple terms."  
+
+5. **Opinion/Advice**  
+   - *Example:* "Whats your favorite productivity hack?"  
+
+6. **Fun/Offbeat**  
+   - *Example:* "If animals could talk, which would be the rudest?"  
+
+Let me know which type (or specific questions) youd like to explore, and well dive in!  
+
+**Alternatively**: Are you testing *my* responses, or preparing questions for an interview/quiz? Clarify your goal, and Ill tailor the approach.  
+
+ *Recording readyproceed when set!*
+You:  .
+AI:  
+You:  Hello, what question are we doing today? Your pick. Let's get it started.
+AI: Hey there! I'm an interviewer at Amazon. Let's start with a classic: "Given an array of integers, find two numbers that add up to a specific target." How would you approach this?
+You:  I would think of a nested loop first but that would be kind of slow. I can memoize it using a dictionary and iterate through and if I have the difference then I would just if I find the difference I'll just return it and the difference will cut difference being the key and the index being the value.
+AI: Great approach! Using a hash map (dictionary) to store the differences is indeed an optimal O(n) solution for the Two Sum problem. 
+
+How would you handle edge cases, like when there's no solution or duplicate elements?

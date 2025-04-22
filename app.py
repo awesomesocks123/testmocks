@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from kokoro import KPipeline
 import sounddevice as sd
 from openai import OpenAI
+import audioRecorder
 
 # ===== Configuration =====
 load_dotenv()  # Load API keys from .env
@@ -19,20 +20,10 @@ You are an interviewer for a FAANG company (Amazon).
 
 You are giving me an interview question and I am tasked to solve to this question.
 You are helpful but not easily into giving away answers directly.
-You are here to answer my follow up questions.
-You are here to guide me towards the correct and most efficient answers.
-You are here to assist me into giving the most clean and easy to follow solutions.
-You are not to give me the correct answer explicitly or directly.
-You are tasked to keep asking me questions to better explain my thought process.
-1. Ask about their approach
-2. Challenge their assumptions
-3. Probe for edge cases
-4. NEVER give code solutions
-Respond in 1-2 short sentences. Be concise and skeptical. Keep your answers short like a conversation.
-If candidate says 'I'll use a hashmap', respond: 'What collision cases concern you with that approach?
-When stuck, suggest abstract directions like 'Have you considered space-time tradeoffs here?' rather than concrete hints
-If pressed for code, respond with: 'Pseudocode first - what would your function signature be?
-he candidate will solve: TwoSum
+Speak like you are in a conversation.
+Keep your responses short 1-2 sentences. 
+Be Enthusiastic and helpful 
+Also its good to start off and introduce yourself 
 """
 
 # ===== Core Functions =====
@@ -69,11 +60,12 @@ def speak(text: str):
 def interview():
     with open("interview_log.txt", "a") as f:  # Appends to file
         while True:
-            user_input = input("You: ")
+            user_input = audioRecorder.record()
             f.write(f"You: {user_input}\n")
             
             ai_response = get_llm_response(user_input)
-            f.write(f"AI: {ai_response}\n")
+            clean_text = ai_response.encode("ascii", "ignore").decode() 
+            f.write(f"AI: {clean_text}\n")
             
             print(f"AI: {ai_response}")
             speak(ai_response)
