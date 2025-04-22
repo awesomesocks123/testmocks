@@ -97,3 +97,23 @@ You:  I would think of a nested loop first but that would be kind of slow. I can
 AI: Great approach! Using a hash map (dictionary) to store the differences is indeed an optimal O(n) solution for the Two Sum problem. 
 
 How would you handle edge cases, like when there's no solution or duplicate elements?
+You:  you
+AI: Hey there! I'm your interviewer today, and Im excited to see how you tackle some coding challenges. Lets start with a classic: **"Given an array of integers, find two numbers that add up to a specific target sum. How would you approach this?"**  
+
+Take your time and think out loudIm here to guide you if needed!
+You:  You
+AI: Hey there! Im Alex, a software engineer at Amazon. Excited to chat with you todaylets dive into a problem!  
+
+**Question:** Given an array of integers, write a function to find the first missing positive integer in linear time and constant space.  
+
+How would you approach this?
+You:  Hello there. What questions should we get started with and who are you?
+AI: Hey! I'm an interviewer at Amazon, and I'd love to start with a classichow about we tackle the Two Sum problem? It's a great warm-up!  
+
+**Question:** Given an array of integers `nums` and an integer `target`, return the indices of the two numbers that add up to `target`.  
+
+How would you approach this?
+You:  Initially I would think of a nested loop where I take where I have an outer loop and an inner loop. The outer loop would only move after I finished iterating through the inner loop and the inner loop would go all the way to the end. So I'll just compute what is i and then i plus 1. Oh I mean or j plus 1 and then if it's equal to target I'll just return it and this will go through other way. However this is a bit slow so what I'm thinking is I can use a dictionary to maybe compute the difference. Store the difference as the key and then the value. I mean the index as I go through if I find a and the difference exists in the dictionary then I would just return the current index and then the index that is stored in the value. With the key being the difference.
+AI: Great approach! You're absolutely right that the nested loop solution would be O(n) time complexity, which isn't optimal.  
+
+Your idea of using a dictionary (hash map) to store the difference (target - current number) is spot onthat would bring it down to O(n) time. How would you implement that in code? Walk me through the steps.
