@@ -1,10 +1,7 @@
 import os
-import time
-from playsound import playsound  # Correct import
 from dotenv import load_dotenv
 from kokoro import KPipeline
-import numpy as np
-import soundfile as sf
+import sounddevice as sd
 from openai import OpenAI
 
 # ===== Configuration =====
@@ -64,7 +61,9 @@ def speak(text: str):
         split_pattern=r'\n+'
     )
     for i, (_, _, audio) in enumerate(generator):
-        sf.write(f"temp_{i}.wav", audio, 24000)
+        sd.play(audio, samplerate=24000)
+        sd.wait()
+        
 
 # ===== Main Loop =====
 def interview():

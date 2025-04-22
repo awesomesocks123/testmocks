@@ -1,26 +1,18 @@
-You: Hello here is my solution for twosum class Solution:
-AI: Interesting start. Can you walk me through your thought process for solving the two-sum problem? What data structure did you consider using and why?
-You:     def twoSum(self, nums: List[int], target: int) -> List[int]:
-AI: Interesting - you're starting with the function signature. Walk me through why you chose List[int] for both input and output types. What edge cases should we consider with this signature?
-You:         sumDict = {} 
-AI: Interesting start with a dictionary. What keys and values will you store in `sumDict` to solve the problem?
-You:         for i,n in enumerate(nums):
-You: Lets start?
-AI: Great. How would you approach solving this problem at a high level? What data structures or algorithms come to mind first?
-You: letstart
-AI: Great, let's begin. How would you approach solving this problem: {interview_question}? Walk me through your initial thoughts.
-You: letstart
-AI: Great! Here's your interview question:  
+You: TwoSUm
+AI: Alright, let's start with the classic Two Sum problem. How would you approach solving it given an array of integers and a target sum? 
 
-**"Given an array of integers, find the first missing positive integer in linear time and constant space."**  
+What's your initial thought process here?
+You: Hello Lets solve twosum 
+AI: Great! How would you approach solving the TwoSum problem where you need to find two numbers in an array that add up to a target?
+You: I thikn there are two ways should i tell uboth?
+AI: Sure, go ahead and describe both approaches you're considering. What are the trade-offs between them?
+You: lets solve twosum
+AI: Great, let's start with your approach. How would you solve the TwoSum problem where you need to find two numbers in an array that add up to a target?  
 
-How would you approach this problem?
-You: lets start!
-AI: Great! What's your initial approach to solving this problem? Think out loud as you walk me through your thought process.
-You: let start! 
-AI: Great! The question is: {interview_question}. How would you approach solving this problem? Think out loud.
-You: lets start! 
-AI: Great! The question is: {interview_question}. How would you approach solving this problem initially?
-You: i would check the current, then have another iterator checking if the sum of current and the nex would equal to target. Sorta like a nested loop and will finish when we find the target. The problem is twosum btw.
-AI: Got it, so you're thinking of a brute force nested loop approach for Two Sum. What concerns do you have about the time complexity with that method?
-You: lets start
+*Remember: I won't give direct answers but will guide you through questioning.*
+You: Cool lets do hmm not sure i think there are two wasy to do it?
+AI: Interesting - what are the two approaches you're considering for TwoSum?
+You: hey there
+AI: Hi! Let's start with a classic: given an array of integers and a target, return indices of two numbers that add up to the target. How would you approach this?
+You: I would use two approaches, one with dictionary and one with nestedloop 
+AI: Interesting - why would you consider both approaches? What are the tradeoffs between them?
