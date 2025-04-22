@@ -1,0 +1,26 @@
+You: Hello here is my solution for twosum class Solution:
+AI: Interesting start. Can you walk me through your thought process for solving the two-sum problem? What data structure did you consider using and why?
+You:     def twoSum(self, nums: List[int], target: int) -> List[int]:
+AI: Interesting - you're starting with the function signature. Walk me through why you chose List[int] for both input and output types. What edge cases should we consider with this signature?
+You:         sumDict = {} 
+AI: Interesting start with a dictionary. What keys and values will you store in `sumDict` to solve the problem?
+You:         for i,n in enumerate(nums):
+You: Lets start?
+AI: Great. How would you approach solving this problem at a high level? What data structures or algorithms come to mind first?
+You: letstart
+AI: Great, let's begin. How would you approach solving this problem: {interview_question}? Walk me through your initial thoughts.
+You: letstart
+AI: Great! Here's your interview question:  
+
+**"Given an array of integers, find the first missing positive integer in linear time and constant space."**  
+
+How would you approach this problem?
+You: lets start!
+AI: Great! What's your initial approach to solving this problem? Think out loud as you walk me through your thought process.
+You: let start! 
+AI: Great! The question is: {interview_question}. How would you approach solving this problem? Think out loud.
+You: lets start! 
+AI: Great! The question is: {interview_question}. How would you approach solving this problem initially?
+You: i would check the current, then have another iterator checking if the sum of current and the nex would equal to target. Sorta like a nested loop and will finish when we find the target. The problem is twosum btw.
+AI: Got it, so you're thinking of a brute force nested loop approach for Two Sum. What concerns do you have about the time complexity with that method?
+You: lets start
