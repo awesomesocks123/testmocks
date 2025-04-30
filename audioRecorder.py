@@ -53,5 +53,4 @@ def record():
         wf.writeframes(b''.join(frames))
 
     result = model.transcribe(OUTPUT_FILENAME)
-    print(result)
     return result["text"]
