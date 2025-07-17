@@ -1,0 +1,3 @@
+@echo off
+echo Starting Interview Mocker...
+python start_app.py
