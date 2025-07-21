@@ -57,12 +57,10 @@ npm run dev
 ## How to Use
 
 1. Start the application using `python start_app.py`
-2. Enter a LeetCode problem URL in the input field and click "Submit"
-3. The AI interviewer will introduce the problem
+2. The AI interviewer will introduce a question
 4. Use the "Record Response" button to answer interview questions
 5. Use "Replay Last" to hear the last AI response again
-6. Use "Add Clipboard" to add code from your clipboard to the interview context
-7. Use "New Problem" to start with a different LeetCode problem
+6. Use "Add Clipboard" to add text to context 
 
 ## Architecture
 
@@ -75,5 +73,4 @@ npm run dev
 - `api.py`: Flask API for the backend
 - `app.py`: Original Python backend logic
 - `audioRecorder.py`: Audio recording and transcription functionality
-- `scrape.py`: LeetCode problem scraping functionality
 - `start_app.py`: Script to run both backend and frontend together
