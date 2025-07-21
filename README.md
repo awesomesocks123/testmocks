@@ -4,7 +4,6 @@ A combined application that integrates a Python backend with an Electron fronten
 
 ## Features
 
-- Submit LeetCode problem URLs to set up interview context
 - Record audio responses to interview questions
 - Get AI-powered feedback from a simulated interviewer
 - Add code from clipboard to the interview context
